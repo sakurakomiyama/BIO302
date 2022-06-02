@@ -1,12 +1,15 @@
-tidyverse
-lme4
 library(usethis)
-rmarkdown
+library(tidyverse)
+library(lme4)
+library(rmarkdown)
+
 
 
 #=== June 1 ===#
 runif(1)
 
+#== Set-up ==#
+#configure your name and email associated with your GitHub account
 use_git_config(
   user.name = "sakurakomiyama", 
   user.email = "sakura.komiyama@uib.no"
@@ -25,4 +28,12 @@ use_github()
 
 #create_from_github("sakurakomiyama/BIO302") #To clone repository (No need to do when you create new project)
 
-#== Stage, commit and push ==#
+#== Exercise (make a plot) ==#
+palmerpenguins::penguins
+boxplot(palmerpenguins::penguins$flipper_length_mm~palmerpenguins::penguins$sex, 
+        xlab = "", ylab = "Flipper length (mm)")
+
+#== Merging branches locally ==#
+# go to the Terminal and type: 
+# 'git checkout main'
+# 'git merge community_analysis'
