@@ -37,3 +37,9 @@ boxplot(palmerpenguins::penguins$flipper_length_mm~palmerpenguins::penguins$sex,
 # go to the Terminal and type: 
 # 'git checkout main'
 # 'git merge community_analysis'
+
+
+#== Delete branches locally ==#
+# go to the Terminal and type: 
+# 'git branch -d community_analysis'
+# 'git branch -D community_analysis'
